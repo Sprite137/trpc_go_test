@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package trpc.test.helloworld;
+option go_package="git.woa.com/trpcprotocol/test/helloworld";
+
+service GreeterRpc {
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+  rpc SayHi (HelloRequest) returns (HelloReply) {}
+}
+
+service GreeterHttp {
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+  rpc SayHi (HelloRequest) returns (HelloReply) {}
+}
+
+message HelloRequest {
+  string msg = 1;
+}
+
+message HelloReply {
+  string msg = 1;
+}
