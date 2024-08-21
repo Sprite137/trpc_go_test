@@ -2,20 +2,19 @@ global:                             #全局配置
   namespace: development            #环境类型，分正式 production 和非正式 development 两种类型
   env_name: dev                    #环境名称，非正式环境下多环境的名称
 server:     # 这里可以写多个配置，这里面的service就是后面注册的service                                    #服务端配置
-  app: trpc-demo                                        #业务的应用名
-  server:  stdhttp                            #进程服务名
+  app: trpc-demo                                       #业务的应用名
+  server:  hello                                       #进程服务名
   service:                                         #业务服务提供的 service，可以有多个                          #请求最长处理时间 单位 毫秒
-    - name: trpc.hello.stdhttp # name可以随便写
+    - name: trpc.hello.stdhttp          # name可以随便写
       ip: 127.0.0.1                        #服务监听 ip 地址 可使用占位符 ${ip},ip 和 nic 二选一，优先 ip
       #nic: eth0
       port: 8089                #服务监听端口 可使用占位符 ${port}
       network: tcp                             #网络监听类型  tcp udp
       protocol: http_no_protocol               #应用层协议 trpc http
       timeout: 1000                            #请求最长处理时间 单位 毫秒
-    - name: trpc.hello.http
+    - name: trpc.hello.http         # name可以随便写
       ip: 127.0.0.1                        #服务监听 ip 地址 可使用占位符 ${ip},ip 和 nic 二选一，优先 ip
-      #nic: eth0
-      port: 8089                #服务监听端口 可使用占位符 ${port}
+      port: 8090                #服务监听端口 可使用占位符 ${port}
       network: tcp                             #网络监听类型  tcp udp
-      protocol: http               #应用层协议 trpc http
-      timeout: 1000                            #请求最长处理时间 单位 毫秒
+      protocol: http_no_protocol               #应用层协议 trpc http
+      timeout: 1000
