@@ -1,16 +1,8 @@
-module git.woa.com/trpc-go/helloworld
+module hello
 
-go 1.18
+go 1.22
 
-replace git.woa.com/trpcprotocol/test/helloworld => ./stub/git.woa.com/trpcprotocol/test/helloworld
-
-require (
-	git.code.oa.com/trpc-go/trpc-filter/debuglog v0.1.12
-	git.code.oa.com/trpc-go/trpc-filter/recovery v0.1.4
-	git.code.oa.com/trpc-go/trpc-go v0.18.3
-	git.woa.com/trpcprotocol/test/helloworld v0.0.0-00010101000000-000000000000
-	github.com/golang/mock v1.6.0
-)
+require git.code.oa.com/trpc-go/trpc-go v0.18.4
 
 require (
 	git.woa.com/jce/jce v1.2.0 // indirect
@@ -47,7 +39,7 @@ require (
 	golang.org/x/sync v0.1.0 // indirect
 	golang.org/x/sys v0.18.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
-	google.golang.org/protobuf v1.34.2 // indirect
+	google.golang.org/protobuf v1.33.0 // indirect
 	gopkg.in/cenkalti/backoff.v1 v1.1.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
