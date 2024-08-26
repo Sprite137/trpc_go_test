@@ -1,0 +1,28 @@
+syntax = "proto3";
+package trpc.cros.bookApi;
+
+message  BookId {
+  int32 bookId = 1;
+}
+
+message Book{
+  int32 bookId = 1;
+  string name = 2;
+  string author = 3;
+  int32 price = 4;
+  float score = 5;
+}
+
+
+message BookParams{
+  string name = 1;
+}
+
+
+service  BookApi {
+  //  获取书籍信息
+  rpc GetBookInfo(BookParams) returns (Book) {}
+
+  //  保存书籍
+  rpc SaveBook(Book) returns (BookId) {}
+}

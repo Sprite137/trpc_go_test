@@ -1,0 +1,24 @@
+2024-08-26 11:40:15.346	INFO	tnet/server_transport.go:98	service:trpc.cros.bookApi.BookApi is using tnet transport, current number of pollers: 1
+2024-08-26 11:40:15.346	INFO	server/service.go:181	process:62794, trpc service:trpc.cros.bookApi.BookApi launch success, tcp:127.0.0.1:8000, serving ...
+2024-08-26 11:40:36.925	INFO	bookApi/book_api.go:20	------GetBookInfo-----
+2024-08-26 11:41:21.273	INFO	server/service.go:627	process:62794, trpc service:trpc.cros.bookApi.BookApi, closing ...
+2024-08-26 11:41:21.273	INFO	admin/admin.go:180	process:62794, admin server, closed
+2024-08-26 11:41:21.273	INFO	server/service.go:671	process 62794 service trpc.cros.bookApi.BookApi remain 0 requests/listeners/conns, wait 1s before closing service
+2024-08-26 11:41:22.274	INFO	server/service.go:657	process:62794, trpc service:trpc.cros.bookApi.BookApi, closed
+2024-08-26 11:41:23.625	INFO	tnet/server_transport.go:98	service:trpc.cros.bookApi.BookApi is using tnet transport, current number of pollers: 1
+2024-08-26 11:41:23.626	INFO	server/service.go:181	process:63621, trpc service:trpc.cros.bookApi.BookApi launch success, tcp:127.0.0.1:8001, serving ...
+2024-08-26 11:41:28.921	ERROR	debuglog@v0.1.13/log.go:233	client request:/trpc.cros.bookApi.BookApi/GetBookInfo, cost:492.676µs, to:127.0.0.1:8000, err:type:framework, code:111, msg:tcp client transport dial, cost:452.979µs, caused by dial network tcp, address 127.0.0.1:8000 with timeout 999.797357ms error: dial tcp 127.0.0.1:8000: connect: connection refused
+2024-08-26 11:41:28.921	FATAL	client/main.go:24	err: type:framework, code:111, msg:tcp client transport dial, cost:452.979µs, caused by dial network tcp, address 127.0.0.1:8000 with timeout 999.797357ms error: dial tcp 127.0.0.1:8000: connect: connection refused
+2024-08-26 11:41:55.999	INFO	bookApi/book_api.go:20	------GetBookInfo-----
+2024-08-26 11:45:54.201	INFO	admin/admin.go:180	process:63621, admin server, closed
+2024-08-26 11:45:54.201	INFO	server/service.go:627	process:63621, trpc service:trpc.cros.bookApi.BookApi, closing ...
+2024-08-26 11:45:54.201	INFO	server/service.go:671	process 63621 service trpc.cros.bookApi.BookApi remain 0 requests/listeners/conns, wait 1s before closing service
+2024-08-26 11:45:55.201	INFO	server/service.go:657	process:63621, trpc service:trpc.cros.bookApi.BookApi, closed
+2024-08-26 11:58:30.475	INFO	tnet/server_transport.go:98	service:trpc.cros.bookApi.BookApi is using tnet transport, current number of pollers: 1
+2024-08-26 11:58:30.476	INFO	server/service.go:181	process:70261, trpc service:trpc.cros.bookApi.BookApi launch success, tcp:127.0.0.1:8001, serving ...
+2024-08-26 12:32:55.520	INFO	bookApi/book_api.go:20	------GetBookInfo-----
+2024-08-26 12:34:26.754	INFO	bookApi/book_api.go:20	------GetBookInfo-----
+2024-08-26 12:34:32.906	INFO	admin/admin.go:180	process:70261, admin server, closed
+2024-08-26 12:34:32.906	INFO	server/service.go:627	process:70261, trpc service:trpc.cros.bookApi.BookApi, closing ...
+2024-08-26 12:34:32.906	INFO	server/service.go:671	process 70261 service trpc.cros.bookApi.BookApi remain 0 requests/listeners/conns, wait 1s before closing service
+2024-08-26 12:34:33.907	INFO	server/service.go:657	process:70261, trpc service:trpc.cros.bookApi.BookApi, closed
