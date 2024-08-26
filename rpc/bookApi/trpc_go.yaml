@@ -25,7 +25,6 @@ server:  # 服务端配置
       port: 8088  # 服务监听端口 可使用占位符 ${port}
       network: tcp  # 网络监听类型 tcp udp
       protocol: http  # 应用层协议 trpc http
-      transport: tnet  # protocol 为 http 时需要删除本行, tnet 暂时不支持 http 协议
       timeout: 1000  # 请求最长处理时间 单位 毫秒
     
 

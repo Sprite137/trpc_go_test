@@ -31,7 +31,8 @@ func callUserApiGetUserInfo() {
 
 func callBookApiGetBookInfo() {
 	proxy := bookApi.NewBookApiClientProxy(
-		client.WithTarget("ip://9.134.61.171:8001"),
+		//client.WithTarget("ip://9.134.61.171:8001"),
+		client.WithTarget("ip://127.0.0.1:8001"),
 		client.WithProtocol("trpc"),
 	)
 	ctx := trpc.BackgroundContext()
