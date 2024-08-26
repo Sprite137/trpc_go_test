@@ -84,3 +84,66 @@ DO NOT panic (Reference: https://git.woa.com/trpc-go/trpc-go/issues/791).
 2024-08-26 16:06:57.082	INFO	server/service.go:671	process 49931 service trpc.cros.bookApi.BookApi_http remain 1 requests/listeners/conns, wait 1s before closing service
 2024-08-26 16:06:58.083	INFO	server/service.go:657	process:49931, trpc service:trpc.cros.bookApi.BookApi, closed
 2024-08-26 16:06:58.183	INFO	server/service.go:657	process:49931, http service:trpc.cros.bookApi.BookApi_http, closed
+2024-08-26 16:14:38.522	INFO	tnet/server_transport.go:98	service:trpc.cros.bookApi.BookApi is using tnet transport, current number of pollers: 1
+2024-08-26 16:14:38.522	INFO	tnet/server_transport.go:58	switch to gonet default transport,  trpc-tnet-transport get TCP listener fail, tcp reuseport error: address already in use
+2024-08-26 16:14:38.522	ERROR	server/service.go:158	process:53128 service:trpc.cros.bookApi.BookApi_http ListenAndServe fail:http server transport get listener err: reuseport.listen network(tcp), address(127.0.0.1:8088) error: address already in use
+2024-08-26 16:14:38.522	ERROR	server/service.go:158	process:53128 service:trpc.cros.bookApi.BookApi ListenAndServe fail:get tcp listener err: failed to graceful restart listen tcp:127.0.0.1:8001: tcp reuseport error:address already in use
+2024-08-26 16:14:38.823	INFO	admin/admin.go:180	process:53128, admin server, closed
+2024-08-26 16:14:38.823	ERROR	server/serve_unix.go:74	service serve errors: 2 errors occurred:
+	* http server transport get listener err: reuseport.listen network(tcp), address(127.0.0.1:8088) error: address already in use
+	* get tcp listener err: failed to graceful restart listen tcp:127.0.0.1:8001: tcp reuseport error:address already in use
+
+
+Note: it is normal to have "use of closed network connection" error during hot restart.
+DO NOT panic (Reference: https://git.woa.com/trpc-go/trpc-go/issues/791).
+2024-08-26 16:14:38.823	FATAL	bookApi/main.go:19	2 errors occurred:
+	* http server transport get listener err: reuseport.listen network(tcp), address(127.0.0.1:8088) error: address already in use
+	* get tcp listener err: failed to graceful restart listen tcp:127.0.0.1:8001: tcp reuseport error:address already in use
+
+
+2024-08-26 16:15:01.920	INFO	tnet/server_transport.go:98	service:trpc.cros.bookApi.BookApi is using tnet transport, current number of pollers: 1
+2024-08-26 16:15:01.921	INFO	tnet/server_transport.go:58	switch to gonet default transport,  trpc-tnet-transport get TCP listener fail, tcp reuseport error: address already in use
+2024-08-26 16:15:01.921	ERROR	server/service.go:158	process:53228 service:trpc.cros.bookApi.BookApi_http ListenAndServe fail:http server transport get listener err: reuseport.listen network(tcp), address(127.0.0.1:8088) error: address already in use
+2024-08-26 16:15:01.921	ERROR	server/service.go:158	process:53228 service:trpc.cros.bookApi.BookApi ListenAndServe fail:get tcp listener err: failed to graceful restart listen tcp:127.0.0.1:8001: tcp reuseport error:address already in use
+2024-08-26 16:15:02.221	INFO	admin/admin.go:180	process:53228, admin server, closed
+2024-08-26 16:15:02.221	ERROR	server/serve_unix.go:74	service serve errors: 2 errors occurred:
+	* http server transport get listener err: reuseport.listen network(tcp), address(127.0.0.1:8088) error: address already in use
+	* get tcp listener err: failed to graceful restart listen tcp:127.0.0.1:8001: tcp reuseport error:address already in use
+
+
+Note: it is normal to have "use of closed network connection" error during hot restart.
+DO NOT panic (Reference: https://git.woa.com/trpc-go/trpc-go/issues/791).
+2024-08-26 16:15:02.222	FATAL	bookApi/main.go:19	2 errors occurred:
+	* http server transport get listener err: reuseport.listen network(tcp), address(127.0.0.1:8088) error: address already in use
+	* get tcp listener err: failed to graceful restart listen tcp:127.0.0.1:8001: tcp reuseport error:address already in use
+
+
+2024-08-26 16:16:09.323	INFO	tnet/server_transport.go:98	service:trpc.cros.bookApi.BookApi is using tnet transport, current number of pollers: 1
+2024-08-26 16:16:09.324	INFO	tnet/server_transport.go:58	switch to gonet default transport,  trpc-tnet-transport get TCP listener fail, tcp reuseport error: address already in use
+2024-08-26 16:16:09.324	ERROR	server/service.go:158	process:53591 service:trpc.cros.bookApi.BookApi_http ListenAndServe fail:http server transport get listener err: reuseport.listen network(tcp), address(127.0.0.1:8088) error: address already in use
+2024-08-26 16:16:09.324	ERROR	server/service.go:158	process:53591 service:trpc.cros.bookApi.BookApi ListenAndServe fail:get tcp listener err: failed to graceful restart listen tcp:127.0.0.1:8001: tcp reuseport error:address already in use
+2024-08-26 16:16:09.624	INFO	admin/admin.go:180	process:53591, admin server, closed
+2024-08-26 16:16:09.624	ERROR	server/serve_unix.go:74	service serve errors: 2 errors occurred:
+	* http server transport get listener err: reuseport.listen network(tcp), address(127.0.0.1:8088) error: address already in use
+	* get tcp listener err: failed to graceful restart listen tcp:127.0.0.1:8001: tcp reuseport error:address already in use
+
+
+Note: it is normal to have "use of closed network connection" error during hot restart.
+DO NOT panic (Reference: https://git.woa.com/trpc-go/trpc-go/issues/791).
+2024-08-26 16:16:09.624	FATAL	bookApi/main.go:19	2 errors occurred:
+	* http server transport get listener err: reuseport.listen network(tcp), address(127.0.0.1:8088) error: address already in use
+	* get tcp listener err: failed to graceful restart listen tcp:127.0.0.1:8001: tcp reuseport error:address already in use
+
+
+2024-08-26 16:16:53.911	INFO	tnet/server_transport.go:98	service:trpc.cros.bookApi.BookApi is using tnet transport, current number of pollers: 1
+2024-08-26 16:16:53.912	INFO	server/service.go:181	process:53882, trpc service:trpc.cros.bookApi.BookApi launch success, tcp:127.0.0.1:8001, serving ...
+2024-08-26 16:16:53.912	INFO	server/service.go:181	process:53882, http service:trpc.cros.bookApi.BookApi_http launch success, tcp:127.0.0.1:8088, serving ...
+2024-08-26 16:18:11.871	INFO	bookApi/book_api.go:20	------GetBookInfo-----
+2024-08-26 16:18:32.589	INFO	bookApi/book_api.go:20	------GetBookInfo-----
+2024-08-26 16:18:41.760	INFO	server/service.go:627	process:53882, trpc service:trpc.cros.bookApi.BookApi, closing ...
+2024-08-26 16:18:41.760	INFO	server/service.go:627	process:53882, http service:trpc.cros.bookApi.BookApi_http, closing ...
+2024-08-26 16:18:41.760	INFO	admin/admin.go:180	process:53882, admin server, closed
+2024-08-26 16:18:41.760	INFO	server/service.go:671	process 53882 service trpc.cros.bookApi.BookApi remain 0 requests/listeners/conns, wait 1s before closing service
+2024-08-26 16:18:41.760	INFO	server/service.go:671	process 53882 service trpc.cros.bookApi.BookApi_http remain 1 requests/listeners/conns, wait 1s before closing service
+2024-08-26 16:18:42.761	INFO	server/service.go:657	process:53882, trpc service:trpc.cros.bookApi.BookApi, closed
+2024-08-26 16:18:42.862	INFO	server/service.go:657	process:53882, http service:trpc.cros.bookApi.BookApi_http, closed
