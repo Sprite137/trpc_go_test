@@ -2,8 +2,8 @@ package main
 
 import (
 	"context"
+	MD5 "github.com/Sprite137/release_test"
 	"io"
-
 	pb "trpc.cros.userApi"
 )
 
@@ -17,6 +17,7 @@ func (s *userApiImpl) GetUserInfo(
 	req *pb.Id,
 ) (*pb.UserInfo, error) {
 	rsp := &pb.UserInfo{}
+	rsp.Name = MD5.StringMd5("xz")
 	return rsp, nil
 }
 

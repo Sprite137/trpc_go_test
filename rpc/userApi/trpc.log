@@ -1,0 +1,4 @@
+2024-08-26 15:47:56.379	ERROR	debuglog@v0.1.13/log.go:233	client request:/trpc.cros.bookApi.BookApi/GetBookInfo, cost:614.011807ms, to:9.134.61.171:8001, err:type:framework, code:171, msg:tcp client transport ReadFrame, caused by trpc framer: read framer head magic 18516 != 2352, not match
+2024-08-26 15:47:56.379	FATAL	client/main.go:41	err: type:framework, code:171, msg:tcp client transport ReadFrame, caused by trpc framer: read framer head magic 18516 != 2352, not match
+2024-08-26 15:48:02.509	ERROR	debuglog@v0.1.13/log.go:233	client request:/trpc.cros.bookApi.BookApi/GetBookInfo, cost:118.310024ms, to:9.134.61.171:8001, err:type:framework, code:171, msg:tcp client transport ReadFrame, caused by trpc framer: read framer head magic 18516 != 2352, not match
+2024-08-26 15:48:02.509	FATAL	client/main.go:41	err: type:framework, code:171, msg:tcp client transport ReadFrame, caused by trpc framer: read framer head magic 18516 != 2352, not match

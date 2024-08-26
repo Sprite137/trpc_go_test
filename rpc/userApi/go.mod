@@ -3,16 +3,18 @@ module trpc.app.UserApi
 go 1.18
 
 replace trpc.cros.userApi => ./stub/trpc.cros.userApi
+
 replace trpc.cros.bookApi => ../bookApi/stub/trpc.cros.bookApi
 
 require (
 	git.code.oa.com/trpc-go/trpc-filter/debuglog v0.1.13
 	git.code.oa.com/trpc-go/trpc-filter/recovery v0.1.5
 	git.code.oa.com/trpc-go/trpc-go v0.18.4
+	github.com/Sprite137/release_test v0.0.0-20240826073412-1fa9e4a0dea7
 	github.com/golang/mock v1.6.0
 	github.com/stretchr/testify v1.9.0
-	trpc.cros.userApi v0.0.0-00010101000000-000000000000
 	trpc.cros.bookApi v0.0.0-00010101000000-000000000000
+	trpc.cros.userApi v0.0.0-00010101000000-000000000000
 )
 
 require (
